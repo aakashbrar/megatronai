@@ -1,0 +1,27 @@
+
+:root{--bg:#0b1220;--text:#e5e7eb;--muted:#a1a1aa;--card:#0f172a;--primary:#3B82F6;--accent:#22C55E}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+.nav{background:#0b1220;border-bottom:1px solid rgba(255,255,255,.08);position:sticky;top:0;z-index:10}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.brand img{height:36px;width:auto;border-radius:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));color:#0b1220;font-weight:700}
+.hero{padding:72px 0 36px;border-bottom:1px solid rgba(255,255,255,.08)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+h1{font-size:44px;line-height:1.1;margin:0 0 8px}
+.lede{color:var(--muted);font-size:18px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.kpi strong{font-size:22px;display:block}
+.clients{padding:40px 0;text-align:center}
+.client-logos{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.client-logos span{padding:10px 16px;background:#111827;border:1px solid rgba(255,255,255,.12);border-radius:999px}
+.footer{padding:34px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);margin-top:24px}
+.hero-art{height:320px;border:1px dashed rgba(255,255,255,.12);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){h1{font-size:36px}.kpis{grid-template-columns:1fr}}
