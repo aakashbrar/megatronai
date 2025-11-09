@@ -23,5 +23,6 @@ h1{font-size:44px;line-height:1.1;margin:0 0 8px}
 .client-logos span{padding:10px 16px;background:#111827;border:1px solid rgba(255,255,255,.12);border-radius:999px}
 .footer{padding:34px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);margin-top:24px}
 .hero-art{height:320px;border:1px dashed rgba(255,255,255,.12);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.hero-art img { max-width: 100%; height: auto; display: block; }
 @media(max-width:960px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){h1{font-size:36px}.kpis{grid-template-columns:1fr}}
